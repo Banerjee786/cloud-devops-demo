@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cloud-devops-demo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/workshop-demo/cloud-devops-demo" vcs="Git" />
   </component>
 </project>
