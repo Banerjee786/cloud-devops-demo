@@ -5,7 +5,7 @@ import BackgroundImg from '../visuals/EventFlyer.png';
 const Agenda = () => {
   return (
     <div>
-        Agenda
+        Welcome to the Workshop on Cloud Computing and DevOps
     </div>
   );
 };
