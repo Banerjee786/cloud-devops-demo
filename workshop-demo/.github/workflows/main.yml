@@ -1,5 +1,4 @@
-name: Upload Website
-
+name: S3 Upload
 
 on:
   push:
