@@ -18,8 +18,7 @@ function App() {
     <>
       <Router>
         <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Navigate replace to="/home" />} />
+        <Route path="/" element={<Home />} />
         <Route path="/agenda" element={<Agenda />} />
         </Routes>
       </Router>
