@@ -1,0 +1,33 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  myDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Origins:
+          - DomainName: mybucket.s3.amazonaws.com
+            Id:
+            S3OriginConfig:
+              OriginAccessIdentity: origin-access-identity/cloudfront/
+        Enabled: 'true'
+        Comment: Some comment
+        DefaultRootObject: index.html
+        Aliases:
+          - mysite.example.com
+          - yoursite.example.com
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - DELETE
+            - GET
+            - HEAD
+            - OPTIONS
+            - PATCH
+            - POST
+            - PUT
+          TargetOriginId: myS3Origin
+          ForwardedValues:
+            QueryString: 'false'
+            Cookies:
+              Forward: none
+        ViewerCertificate:
+          CloudFrontDefaultCertificate: 'true'
