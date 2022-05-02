@@ -40,7 +40,7 @@ function createData(
 }
 
 const rows = [
-  createData(1,'Introduction to Cloud Computing', 'Presentation', 'Cloud', 'N/A'),
+  createData(1,'RCC Institute of Information Technology', 'Presentation', 'Cloud', 'N/A'),
   createData(2,'Introduction to Public Cloud Platforms', 'Presentation', 'Cloud', 'N/A'),
   createData(3,'On-Premise VS IaaS VS PaaS VS SaaS', 'Presentation', 'Cloud', 'N/A'),
   createData(4,'6 Pillars of Well-architected Cloud Infrastructure', 'Presentation', 'General', 'N/A'),
